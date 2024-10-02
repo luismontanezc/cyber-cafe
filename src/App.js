@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Menu from './Menu';
+import Producto from './pages/Producto';
+import Producto2 from "./pages/Producto2";
+import Producto3 from "./pages/Producto3";
+import {InfoProducto, InfoProducto2 } from './pages/InfoProducto';
+import InfoComplementos from './pages/InfoComplementos';
+import Login from "./pages/FormularioLogin";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Menu/>} />
+      <Route path="/Producto" element={<Producto/>} />
+      <Route path="/InfoComplementos/:id" element={<InfoComplementos/>} />
+      <Route path="/FormularioLogin" element={<Login />} />
+      <Route path="/InfoProducto/:id" element={<InfoProducto />} />
+      <Route path="/InfoProducto2/:id" element={<InfoProducto2 />} />
+      <Route path="/Producto2" element={<Producto2 />} />
+      <Route path="/Producto3" element={<Producto3 />} />
+      
+      
+    </Routes>
   );
-}
+};
 
 export default App;

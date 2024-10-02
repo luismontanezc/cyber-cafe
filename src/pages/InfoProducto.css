@@ -1,0 +1,151 @@
+
+.esp-portada {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 2vw;
+
+}
+
+
+.acordeon-contenido {
+    display: none;
+}
+.nombre-portada {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2vw;
+    font-size: 28px;
+}
+.img-principal {
+    width: 40vw;
+    height: 25vw;
+    border-radius: 10px;
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.precio-portada {
+    color: var(--white);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    background-color: var(--violet-700);
+    border-radius: 25px;
+    padding: 1vw;
+
+}
+.precioA-portada {
+    color: var(--neutral-950);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4vw;
+    text-decoration: line-through;
+    background-color: var(--violet-200);
+    border-radius: 25px;
+    padding: 0.5vw
+
+}
+
+.detalles {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin: 2vw 3vw 2vw 10vw;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    gap: 1.2vw;
+
+}
+
+.compra {
+    display: flex;
+    gap: 1vw;
+    justify-content: right;
+    margin-right: 5vw;
+}
+.boton-compra {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:900;
+    width: 200px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.icono-carrito {
+    width: 50px;
+    height: auto;
+    border-radius: 25%;
+}
+
+.portada-comple {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.compracomple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+.img-comple {
+    width: 15vw;
+    height: 12vw;
+    border-radius: 25px;
+
+}
+
+
+/* filtro categoria */
+
+
+.tipo-span2{
+    word-wrap: break-word;
+    max-width: 320px;
+    font-size: 30px;
+    color: white;
+}
+
+.img3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img3:hover {
+    filter: brightness(120%);
+}
+
+@media (max-width: 760px) {
+    .nombre-portada{
+    font-size: 16px;
+    }
+
+    .detalles {
+        font-size: 10px;
+    }
+
+    .boton-compra {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:900;
+        width: 70px;
+        height: 30px;
+        padding: 2px;
+        border-radius: 25px;
+        font-size: 10px
+    }
+    .icono-carrito {
+        width: 35px;
+        height: auto;
+        border-radius: 25%;
+    }
+    
+}
