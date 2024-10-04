@@ -7,12 +7,12 @@ import Cuerpo3 from "./Cuerpo3";
 
 function MenuArticle({ onNavigate }) {
   const marcas = [
-    "ACER",
-    "ASUS",
-    "HP",
-    "PROCESADORES INTEL",
-    "LENOVO",
-    "PROCESADORES RYZEN",
+    "Cybercafé",
+    "Impresiones",
+    "Kiosco",
+    "Librería",
+    "Menú",
+    "Productos elecrtónicos",
   ];
 
   const imgs = Monitores.map((src, index) => (
@@ -29,7 +29,7 @@ function MenuArticle({ onNavigate }) {
 
   return (
     <nav className="main">
-      <h1 className="marca">Marcas exclusivas</h1>
+      <h1 className="marca">Nuestros Servicios</h1>
       <section className="productos">{imgs}</section>
     </nav>
   );
