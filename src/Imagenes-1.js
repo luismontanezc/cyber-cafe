@@ -4,7 +4,7 @@ let Monitores = [
   "/imgs/Principal/kiosko.jpg",
   "/imgs/Principal/Libreria.jpeg",
   "/imgs/Principal/menu.jpg",
-  "/imgs/Principal/ryzen.jpg",
+  "/imgs/Principal/productos.jpg",
 ];
 
 export default Monitores;
